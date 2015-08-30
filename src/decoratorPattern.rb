@@ -1,5 +1,14 @@
 class BoyFriend
   def sayHello
-    return 'I am a wonderful boy friend!'
+    'I am a wonderful boy friend!'
+  end
+end
+
+class BoyFriendDecorator < SimpleDelegator
+end
+
+class BoyFriendWithHouse < BoyFriendDecorator
+  def sayHello
+    super + ' I have a large House!'
   end
 end

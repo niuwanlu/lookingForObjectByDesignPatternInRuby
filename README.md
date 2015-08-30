@@ -1,1 +1,4 @@
 # lookingForObjectByDesignPatternInRuby
+
+# run test
+rspec
