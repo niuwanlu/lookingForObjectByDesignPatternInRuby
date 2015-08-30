@@ -12,3 +12,10 @@ class BoyFriendWithHouse < BoyFriendDecorator
     super + ' I have a large House!'
   end
 end
+
+class BoyFriendWithCar < BoyFriendDecorator
+  def sayHello
+    super + ' I have a luxury Car!'
+  end
+end
+
