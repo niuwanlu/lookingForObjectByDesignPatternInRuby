@@ -17,4 +17,9 @@ describe 'Decorator Pattern' do
     expect(boyFriendWithCar.sayHello).to eq('I am a wonderful boy friend! I have a luxury Car!')
   end
 
+  it 'boy friend decorated with house and car' do
+    boyFriendWithHouseAndCar = BoyFriendWithCar.new(BoyFriendWithHouse.new(BoyFriend.new))
+    expect(boyFriendWithHouseAndCar.sayHello).to eq('I am a wonderful boy friend! I have a large House! I have a luxury Car!')
+  end
+
 end
